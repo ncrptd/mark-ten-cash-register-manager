@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <label for="bill-amount">Bill Amount</label>
+      <input type="number" id="bill-amount" />
+      <label for="cash-given">Cash Given</label>
+      <input type="number" id="cash-given" />
+      <button id="check-btn">Check</button>
+      <table>
+        <caption>
+          Return Change
+        </caption>
+        <p id="error-message"></p>
+        <tr>
+          <th>No of Notes</th>
+          <td class="notes-to-return"></td>
+          <td class="notes-to-return"></td>
+          <td class="notes-to-return"></td>
+          <td class="notes-to-return"></td>
+          <td class="notes-to-return"></td>
+          <td class="notes-to-return"></td>
+          <td class="notes-to-return"></td>
+        </tr>
+        <tr>
+          <th>Notes</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
