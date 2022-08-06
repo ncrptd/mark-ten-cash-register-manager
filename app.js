@@ -2,6 +2,7 @@ let billAmount = document.querySelector("#bill-amount");
 let cashGiven = document.querySelector("#cash-given");
 let checkBtn = document.querySelector("#check-btn");
 let errorMessage = document.querySelector("#error-message");
+let changeAmountMessage = document.querySelector(".change-amount");
 let notesToReturn = document.querySelectorAll(".notes-to-return");
 let availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
@@ -28,11 +29,14 @@ function showMessage(msg) {
   errorMessage.style.display = "block";
 }
 function calculateChange(amount) {
+  let changeAmount = amount;
+
   for (let i = 0; i < availableNotes.length; i++) {
     let cashToReturn = Math.trunc(amount / availableNotes[i]);
     amount %= availableNotes[i];
     notesToReturn[i].innerText = cashToReturn;
   }
+  changeAmountMessage.innerText = changeAmount + "₹";
 }
 
 checkBtn.addEventListener("click", clickHandler);
