@@ -36,7 +36,7 @@ function calculateChange(amount) {
     amount %= availableNotes[i];
     notesToReturn[i].innerText = cashToReturn;
   }
-  changeAmountMessage.innerText = changeAmount + "₹";
+  changeAmountMessage.innerText = "₹" + changeAmount;
 }
 
 checkBtn.addEventListener("click", clickHandler);
