@@ -15,7 +15,7 @@ function clickHandler() {
       let amount = cash - bill;
       calculateChange(amount);
     } else {
-      showMessage("Do you want to wash the dishes");
+      showMessage("Do you want to wash the dishes?");
     }
   } else {
     showMessage("Invalid input");
